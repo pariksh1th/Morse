@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
+
+
+
+body {
+    background-color: #323232;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    color: white;
+    margin: 1% 16%;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* input {
+    width: 70%;
+    margin-left: 6%;
+    height: 20vh;
+} */
+
+textarea {
+    margin-left: 10%;
+    background-color: #EEF2FF;
+    box-sizing: border-box;
+    border: 1px solid #323232;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px 0 0 25px;
+    border-radius: 4px;
+    resize: none;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    background-color: #676767;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+button.normal:hover {
+    background-color: #323232;
+
+}
+
+.app {
+    margin-top: 80px;
+
+}
+
+.flex-box {
+    position: relative;
+    padding: 40px 60px;
+    display: flex;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    height: 70vh;
+    flex-direction: column;
+    color: #676FA3;
+    background-color: #EEF2FF;
+}
+
+.copy-btn {
+    position: absolute;
+    bottom: 70px;
+    right: 180px;
+}
