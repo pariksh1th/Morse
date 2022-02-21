@@ -66,7 +66,7 @@ button.normal:hover {
     border-radius: 10px;
     width: 60%;
     margin: auto;
-    height: 70vh;
+    height: 65vh;
     flex-direction: column;
     color: #676FA3;
     background-color: #EEF2FF;
@@ -74,6 +74,6 @@ button.normal:hover {
 
 .copy-btn {
     position: absolute;
-    bottom: 70px;
+    bottom: 30px;
     right: 180px;
 }
