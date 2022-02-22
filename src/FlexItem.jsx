@@ -9,8 +9,9 @@ export default function FlexItem(props) {
             <textarea type="text" onChange={(e) => {
                 props.set(e.target.value)
                 props.translate()
-            }} className={props.id} name="" placeholder={props.placehold} cols="100" rows="12" value={props.val} id="" />
+            }} className={props.id} name="" placeholder={props.placehold} value={props.val} id="" />
         </div>
     )
 }
+
 

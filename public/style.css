@@ -27,6 +27,7 @@ h3 {
 
 textarea {
     margin-left: 10%;
+    font-size: 18px;
     background-color: #EEF2FF;
     box-sizing: border-box;
     border: 1px solid #323232;
@@ -34,6 +35,9 @@ textarea {
     padding: 20px 0 0 25px;
     border-radius: 4px;
     resize: none;
+    display: flex;
+    width: 80%;
+    height: 20vh;
 }
 
 button.normal {
@@ -74,6 +78,7 @@ button.normal:hover {
 
 .copy-btn {
     position: absolute;
-    bottom: 30px;
-    right: 180px;
+    bottom: 110px;
+    right: 160px;
 }
+

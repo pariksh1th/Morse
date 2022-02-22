@@ -3,19 +3,39 @@ import FlexItem from './FlexItem'
 import codes from './codes'
 
 
-export default function App() {
+export default function App(props) {
 
 
   var [massage, setMassage] = useState("")
   var [code, setCode] = useState("")
-  var word_chars = massage.split("")
+  var word_chars = Array.from(massage)
+
+  function copyFunction() {
+    /* Get the text field */
+    var copyText = code
+
+    /* Select the text field */
+
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText);
+
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText);
+  }
 
   function traslate() {
-
     var morseCode = ""
     for (let ch in word_chars) {
-      morseCode += codes[ch] + " "
+      console.log(word_chars)
+      if (ch in codes) {
+        morseCode += codes[ch] + " "
+      }
     }
+    // var morseCode = word_chars.reduce(function (acu, char) {
+    //   return acu += codes[char]
+    // })
+
+    console.log("mor " + morseCode)
     setCode(morseCode)
   }
 
@@ -28,7 +48,9 @@ export default function App() {
         <FlexItem key="1" h3="massage" translate={traslate} set={setMassage} val={massage} placehold="Enter the massage here......." />
         <FlexItem key="2" h3="code" id="code-box" translate={traslate} val={code} set={setCode} placehold="Copy code........" />
 
-        <button className='copy-btn normal' >Copy</button>
+        <button className='copy-btn normal' onClick={() => {
+          copyFunction()
+        }} >Copy</button>
       </div></div>
   )
 }
